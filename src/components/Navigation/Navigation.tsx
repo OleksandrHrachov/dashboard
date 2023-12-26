@@ -1,3 +1,5 @@
+import {FC} from 'react';
+
 import "./Navigation.scss";
 import logo from "../../assets/icons/logo.svg";
 import keyIcon from "../../assets/icons/key-square.svg";
@@ -20,9 +22,14 @@ const navigationItems = [
   { icon: messageIcon, title: "Help", link: "#", subMenu: true },
 ];
 
-export const Navigation = () => {
+interface IProps {
+  isShow: boolean;
+}
+
+export const Navigation: FC<IProps> = ({isShow}) => {
   return (
-    <aside className="navigation">
+    <aside className={`navigation ${isShow ? 'navigation--open' : ''}`}>
+      
       <a href="/" className="navigation__logo">
         <img className="navigation__logo-img" src={logo} alt="logo" />
         <span className="navigation__logo-version">v.01</span>

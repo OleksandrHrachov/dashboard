@@ -4,6 +4,18 @@
   width: 100%;
   padding: 0 28px 76px;
   position: relative;
+  transition: all 0.5s;
+
+  @media (max-width: 1024px) {
+    position: absolute;
+    transform: translateX(-110%);
+    background-color: var(--primary-background);
+    min-height: 100vh;
+  }
+
+  &--open {
+    transform: translateX(0%);
+  }
 
   &__logo {
     text-decoration: none;
@@ -51,7 +63,6 @@
     gap: 12px;
     position: absolute;
     bottom: 76px;
-    
 
     &-image {
       &-wrapper {
