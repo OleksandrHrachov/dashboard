@@ -1,11 +1,14 @@
-import './App.scss'
+import "./App.scss";
+import { CustomersPage } from "./components/CustomersPage";
+import { Navigation } from "./components/Navigation";
 
 function App() {
-  
-
   return (
-    <div>hello</div>
-  )
+    <div className="app">
+      <Navigation />
+      <CustomersPage />
+    </div>
+  );
 }
 
-export default App
+export default App;

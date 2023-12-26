@@ -1,0 +1,36 @@
+:root {
+  --primary-background: rgba(250, 251, 255, 1);
+  --gray-83: #838383;
+  --gray-91: #9197b3;
+  --gray-B5: #b5b7c0;
+  --gray-40: #404b52;
+  --gray-75: #757575;
+  --lilac-59: #5932ea;
+  --lilac-59--hover: rgba(89, 50, 234, 0.5);
+  --green-16: #16c098;
+  --green-16-038: rgba(22, 192, 152, 0.38);
+  --red-DF: #df0404;
+  --red-FF: #ffc5c5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

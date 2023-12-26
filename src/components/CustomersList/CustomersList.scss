@@ -1,0 +1,153 @@
+.customers-list {
+  padding: 30px 40px 258px;
+  max-width: 968px;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 42px;
+
+    &-title {
+      &-content {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        margin-bottom: 7px;
+      }
+
+      &-hint {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+        color: var(--green-16);
+      }
+    }
+
+    &-search {
+      max-width: 216px;
+      width: 100%;
+      position: relative;
+      right: 10px;
+
+      &-input {
+        height: 38px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        padding: 10px 10px 10px 40px;
+
+        &::placeholder {
+          color: var(--gray-B5);
+        }
+
+        &:focus {
+          border-radius: 10px;
+          border: 1px solid var(--lilac-59);
+        }
+      }
+
+      &-img {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__table {
+    &-list {
+      list-style: none;
+      font-size: 14px;
+    }
+
+    &-header {
+      color: var(--gray-B5);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 34px;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+    }
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+
+      &:last-child {
+        margin-bottom: 52px;
+      }
+    }
+
+    &-cell {
+      &-name {
+        max-width: 160px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &-company {
+        max-width: 120px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &-phone {
+        max-width: 145px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &-email {
+        max-width: 195px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &-country {
+        max-width: 130px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &-status {
+        width: 100%;
+        max-width: 85px;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &-data {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      color: var(--gray-B5);
+    }
+
+    &-pagination {
+    display: flex;
+    gap: 12px;
+    }
+  }
+}
